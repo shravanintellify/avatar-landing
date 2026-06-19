@@ -25,11 +25,13 @@
         }
 
         .container {
-            max-width: 900px;
+            width: 100%;
+            max-width: 1280px;
             background: white;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             overflow: hidden;
+            margin: 40px;
         }
 
         .header {
@@ -293,6 +295,16 @@
         .demo-text {
             color: #666;
             font-style: italic;
+        }
+
+        @media (min-width: 1024px) {
+            .header {
+                padding: 70px 60px;
+            }
+
+            .content {
+                padding: 60px 60px;
+            }
         }
 
         @media (max-width: 768px) {
