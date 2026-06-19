@@ -279,17 +279,12 @@
         }
 
         .demo-video {
-            background: #ddd;
             width: 100%;
-            max-width: 400px;
-            height: 300px;
+            max-width: 420px;
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: block;
             margin: 0 auto 20px;
-            color: #999;
-            font-size: 3em;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         }
 
         .demo-text {
@@ -400,7 +395,10 @@
             <!-- Demo Section -->
             <div class="demo-section">
                 <h2>See It In Action</h2>
-                <div class="demo-video">🎬</div>
+                <video class="demo-video" controls preload="metadata" poster="assets/demo-poster.jpg">
+                    <source src="assets/demo-video.mp4" type="video/mp4">
+                    Your browser doesn't support embedded video. <a href="assets/demo-video.mp4">Download the demo</a> instead.
+                </video>
                 <p class="demo-text">Generate your first video free. No credit card required.</p>
             </div>
 
